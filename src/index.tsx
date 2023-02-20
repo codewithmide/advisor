@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Demo_Fonts/Fontspring-DEMO-priego-black.otf';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

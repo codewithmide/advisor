@@ -1,0 +1,41 @@
+/* Header styling */
+$text-color: #222222;
+$text-hover-color: #36454f;
+$bg-color: #ffffff;
+
+.header-wrapper {
+    display: grid;
+    place-items: center;
+    margin: .5rem 0;
+}
+
+.header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    img {
+        width: 80px;
+        height: 50px;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    li {
+        font-size: 12px;
+        color: $text-color;
+        
+        &:hover {
+            color: $text-hover-color;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* footer styling */
+$bg-color: #222222;
+$text-hover-color: #36454f;
+$text-color: #ffffff;
+
+.footer-wrapper {
+    width: 100%;
+    background-color: $bg-color;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-text {
+    color: $text-color;
+    font-size: 12px;
+    // font-family: "priego";
+    p {
+        span {
+            a {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.github, .twitter, .linkedin {
+    color: $text-color;
+}
