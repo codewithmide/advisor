@@ -6,13 +6,15 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main className='main'>
-        <Body />
-      </main>
-      <Footer />
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <Header />
+        <main className='main'>
+          <Body />
+        </main>
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 }
 
