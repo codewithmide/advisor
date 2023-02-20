@@ -1,6 +1,9 @@
 import React, { useState, MouseEvent } from 'react';
 import './body.scss';
 import propTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 
 export default function Body()  {
@@ -21,6 +24,12 @@ export default function Body()  {
         })
     }
 
+    // Twitter share
+    const twitterShare = (e: MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        window.open(`https://twitter.com/intent/tweet?text=+${quote} + -${author}`, '_blank');
+    }   
+
     return (
         <div className="body">
             <div className='container' id='#quote-box'>
@@ -39,6 +48,12 @@ export default function Body()  {
                         </button>
                     </div>
                 </form>
+                
+                <div className='share'>
+                    <button onClick={twitterShare} className='share-btn'>Tweet Quote
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </button>
+                </div>
             </div>
         </div>
     );
@@ -46,7 +61,7 @@ export default function Body()  {
 
 Body.propTypes = {
     author: propTypes.string,
-    quote: propTypes.string
+    quote: propTypes.string,
 }
 
 Body.defaultProps = {
