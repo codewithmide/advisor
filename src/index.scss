@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-@font-face {
-  font-family: "priego";
-  src: local("priego"),
-   url("./fonts/Demo_Fonts/Fontspring-DEMO-priego-black.otf") format("truetype");
-}
-
 body {
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

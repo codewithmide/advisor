@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
-import './fonts/Demo_Fonts/Fontspring-DEMO-priego-black.otf';
 
 
 const root = ReactDOM.createRoot(
