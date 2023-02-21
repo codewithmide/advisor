@@ -3,6 +3,7 @@ import './body.scss';
 import propTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import speak from '../Speech/SpeechSynthesis';
 
 
 
@@ -28,7 +29,12 @@ export default function Body()  {
     const twitterShare = (e: MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         window.open(`https://twitter.com/intent/tweet?text=+${quote} + -${author}`, '_blank');
-    }   
+    }
+
+    const handleClick = () => {
+        speak(`${quote} by ${author}`);
+    }
+      
 
     return (
         <div className="body">
@@ -53,6 +59,8 @@ export default function Body()  {
                     <button onClick={twitterShare} className='share-btn'>Tweet Quote
                         <FontAwesomeIcon icon={faTwitter} />
                     </button>
+
+                    <button onClick={handleClick}>Speak</button>
                 </div>
             </div>
         </div>
