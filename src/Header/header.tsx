@@ -12,9 +12,16 @@ export default class Header extends React.Component {
                     </div>
                     <div>
                         <ul className="links">
-                            <li>About</li>
-                            <li>Documentation</li>
-                            <li>Resources</li>
+                            <li>
+                                <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine" target='_blank' rel="noreferrer">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/codewithmide/advisor" target='_blank' rel="noreferrer">
+                                    Code Repository
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
