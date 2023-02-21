@@ -19,7 +19,7 @@ export default class Header extends React.Component {
                             </li>
                             <li>
                                 <a href="https://github.com/codewithmide/advisor" target='_blank' rel="noreferrer">
-                                    Code Repository
+                                    Repository
                                 </a>
                             </li>
                         </ul>
