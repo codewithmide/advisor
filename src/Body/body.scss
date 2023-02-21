@@ -5,7 +5,7 @@ $text-hover-color: #36454f;
 $bg-color: #ffffff;
 
 .body {
-    height: 80vh;
+    height: 83vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -17,6 +17,17 @@ $bg-color: #ffffff;
     height: 70%;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    @media screen and (max-width: 960px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 640px) {
+        width: 85%;
+        height: 70%;
+    }
+    @media screen and (max-width: 320px) {
+        width: 90%;
+        height: 80%;
+    }
 }
 
 form {
@@ -40,10 +51,28 @@ form {
 
 #text {
     text-align: center;
+    @media screen and (max-width: 960px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 640px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 12px;
+    }
 }
 
 #author {
-    margin-bottom: 2rem;
+    margin: 1rem 0;
+    @media screen and (max-width: 960px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 640px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 12px;
+    }
 }
 
 .btn-ctn {
@@ -62,6 +91,15 @@ form {
         background-color: $btn-hover-color;
         color: $bg-color;
         cursor: pointer;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 640px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 10px;
     }
 }
 
@@ -85,5 +123,14 @@ form {
     &:hover {
         background-color: $btn-hover-color;
         color: $bg-color;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 640px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 10px;
     }
 }
