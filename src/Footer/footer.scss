@@ -15,6 +15,13 @@ $text-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 640px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 320px) {
+        width: 90%;
+        font-size: 8px;
+    }
 }
 
 .footer-text {
@@ -25,6 +32,9 @@ $text-color: #ffffff;
             a {
                 color: $text-color;
             }
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 8px;
         }
     }
 }
