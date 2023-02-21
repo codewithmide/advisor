@@ -112,7 +112,7 @@ form {
     padding-left: 1rem;
 }
 
-.share-btn {
+.share-btn, .voice {
     padding: 10px 15px;
     display: flex;
     align-items: center;
@@ -134,4 +134,8 @@ form {
     @media screen and (max-width: 320px) {
         font-size: 10px;
     }
+}
+
+.voice {
+    margin-left: 1rem;
 }

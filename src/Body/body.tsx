@@ -3,6 +3,7 @@ import './body.scss';
 import propTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 import speak from '../Speech/SpeechSynthesis';
 
 
@@ -60,7 +61,9 @@ export default function Body()  {
                         <FontAwesomeIcon icon={faTwitter} />
                     </button>
 
-                    <button onClick={handleClick}>Speak</button>
+                    <button onClick={handleClick} className='voice'>Play Quote
+                        <FontAwesomeIcon icon={faVolumeHigh} />
+                    </button>
                 </div>
             </div>
         </div>
