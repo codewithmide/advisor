@@ -1,36 +1,44 @@
 # Advisor
 
+## Description
+
 Welcome to the Advisor app repository! This project is a web application that generates random pieces of advice using an API, and it is built using TypeScript and SCSS.
 
 ![homepage](/src/images/ui.png)
 
-## `How to use`
+## Usage
 
 **To use this application, follow the steps below:**
 
-1. Clone the repository to your local machine.
+- Clone the repository to your local machine.
 
 ```bash
 git clone https://github.com/codewithmide/advisor.git
 ```
 
-1. Install the dependencies.
+- Install the dependencies.
 
 ```bash
 npm install
 ```
 
-1. Start the development server.
+- Start the development server.
 
 ```bash
 npm start
 ```
 
-1. Then the application will be available at <http://localhost:3000/>.
+- Then the application will be available at <http://localhost:3000/>.
+
+## API
 
 The Advisor app uses a third-party API to generate random pieces of advice. The API used is [Quotable](https://github.com/lukePeavey/quotable), which provides a collection of advice statements that the application can use.
 
+## Technology
+
 The application is built using TypeScript, which is a statically typed superset of JavaScript. This helps to prevent bugs and improve the overall reliability of the code. The styling for the application is written in SCSS, which is a preprocessor that allows for more powerful and flexible CSS styling.
+
+## Contributions and Issues
 
 This repository is open-source, so feel free to contribute to the project by submitting a pull request. If you find any bugs or issues, please report them by opening an issue on the repository.
 
