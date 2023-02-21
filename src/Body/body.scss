@@ -119,6 +119,7 @@ form {
     justify-content: center;
     gap: .5rem;
     border: $bg-color;
+    margin-bottom: 1rem;
     cursor: pointer;
     &:hover {
         background-color: $btn-hover-color;
