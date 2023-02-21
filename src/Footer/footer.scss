@@ -33,6 +33,9 @@ $text-color: #ffffff;
                 color: $text-color;
             }
         }
+        @media screen and (max-width: 640px) {
+            font-size: 10px;
+        }
         @media screen and (max-width: 320px) {
             font-size: 8px;
         }
@@ -42,6 +45,9 @@ $text-color: #ffffff;
 .footer-links {
     display: flex;
     gap: 1rem;
+    @media screen and (max-width: 640px) {
+        gap: 0.5rem;
+    }
 }
 
 .github, .twitter, .linkedin {
